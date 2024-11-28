@@ -9,4 +9,10 @@ theme: readthedocs
 
 nav:
 - Home: 'index.md'
-- TGA: 'second.md'
+- 地面站: 
+  - TGA: 'second.md'
+- About:
+  - License : 'license.md'
+
+markdown_extensions:
+  - attr_list
