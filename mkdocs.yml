@@ -1,0 +1,12 @@
+site_name: Transky
+
+
+#pages:
+#- [index.md, home]
+#- [second.md, Sec]
+
+theme: readthedocs
+
+nav:
+- Home: 'index.md'
+- TGA: 'second.md'
