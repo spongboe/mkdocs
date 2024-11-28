@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>TGA - Transky</title>
+    <title>固件升级 - Transky</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/styles.css" rel="stylesheet" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "TGA";
-        var mkdocs_page_input_path = "second.md";
+        var mkdocs_page_name = "\u56fa\u4ef6\u5347\u7ea7";
+        var mkdocs_page_input_path = "update.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -43,12 +44,41 @@
                 <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
                 </li>
               </ul>
-              <p class="caption"><span class="caption-text">地面站</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">TGA</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">固件升级</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">一、连接云台</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1">1. 云台接通电源</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-type-c">2. TYPE-C插入云台接口</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-tga">3. 打开TGA，选择对应的串口</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">二、固件升级</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1_1">1. 进入升级模式</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2">2. 回到主界面</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3">3. 选择升级文件</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#note">!!! note "升级提示"</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4">4. 升级完成</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">三、重启云台</a>
+    </li>
     </ul>
-                  </li>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gcs/">地面站</a>
+                </li>
               </ul>
               <p class="caption"><span class="caption-text">About</span></p>
               <ul>
@@ -69,8 +99,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">地面站</li>
-      <li class="breadcrumb-item active">TGA</li>
+      <li class="breadcrumb-item active">固件升级</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -79,23 +108,45 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="_1">我的第二个页面</h1>
-<!-- [Tga](https://www.baidu.com/) 链接语法 -->
-
-<!-- [下载 TGA_1.6.5_20241021](TGA_1.6.5_20241021.zip) -->
-
-<!-- <a href="docs/TGA_1.6.5_20241021.zip" download>点击下载 TGA_1.6.5_20241021.zip</a> -->
-
-<!-- <a href="docs/Test.jpg" download>点击下载 Test.jpg </a> -->
-
-<p><a download="download" href="../Test.jpg">下载 Test.jpg</a></p>
-<p><a download="download" href="../TGA_1.6.5_20241021.zip">下载 TGA_1.6.5_20241021.zip</a></p>
+                <h1 id="_1">云台设置与升级指南</h1>
+<hr />
+<h2 id="_2">一、连接云台</h2>
+<h3 id="1">1. <strong>云台接通电源</strong></h3>
+<h3 id="2-type-c">2. <strong>TYPE-C插入云台接口</strong></h3>
+<h3 id="3-tga">3. <strong>打开TGA，选择对应的串口</strong></h3>
+<p>点击“打开”，参数默认为 <code>115200 - 8N1</code>，成功后会出现连接成功的弹窗。</p>
+<p><img alt="connect" src="../images/connect.png" /></p>
+<hr />
+<h2 id="_3">二、固件升级</h2>
+<h3 id="1_1">1. 进入升级模式</h3>
+<p><img alt="upgrade" src="../images/upgrade.png" /></p>
+<h3 id="2">2. 回到主界面</h3>
+<p>点击“关闭串口”按钮 --&gt; “打开串口”按钮 --&gt; 进入升级模式</p>
+<p><img alt="retmain" src="../images/retmain.png" /></p>
+<h3 id="3">3. 选择升级文件</h3>
+<p>选择要升级的文件。</p>
+<p><img alt="cooseFiles" src="../images/chooseFiles.png" /></p>
+<hr />
+<h3 id="note">!!! note "升级提示"</h3>
+<ul>
+<li><strong><code>WRITE</code> 时请等待进度条到达 100% 后再点击“WRITE”下一个。</strong></li>
+</ul>
+<p><img alt="updating" src="../images/updating.png" /></p>
+<p><img alt="updating_2" src="../images/updating_2.png" /></p>
+<p><strong>注：</strong><br />
+- 如果遇到升级失败的情况，请插拔 Type-C 线缆后重新升级一次即可。</p>
+<h3 id="4">4. 升级完成</h3>
+<p>点击“退出升级”按钮。</p>
+<p><img alt="updateSuccess" src="../images/updateSuccess.png" /></p>
+<hr />
+<h2 id="_4">三、重启云台</h2>
+<p>以上步骤完成后，请断电重启云台，并拔出 TYPE-C 连接线。</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../license/" class="btn btn-neutral float-right" title="License">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../gcs/" class="btn btn-neutral float-right" title="地面站">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -121,7 +172,7 @@
       <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../license/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../gcs/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
