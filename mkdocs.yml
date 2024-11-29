@@ -9,10 +9,13 @@ theme: readthedocs
 
 nav:
 - Home: 'index.md'
-- 地面站: 
-  - TGA: 'second.md'
+- 固件升级: 'update.md'
+- 地面站: 'gcs.md'
 - About:
   - License : 'license.md'
 
 markdown_extensions:
   - attr_list
+
+extra_css:
+  - css/styles.css  # 引用你创建的自定义样式文件
